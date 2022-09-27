@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      property="og:description"
+      content="Get to know your new friend(s), the Arcade System."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/20540af7-c942-4351-9a89-cd33ee5c95a8%2Farcade.jpg?v=1608837796992"
+    />
+    <title>The Arcades</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- I'm arcade Trash so...-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="front" class="intro"></div>
+    <script>
+      var fronter = "";
+
+      fetch("https://sp-system-site.glitch.me/up")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          fronter = data[0].name;
+          ava = data[0].avatar;
+          desc = data[0].desc
+          document.getElementById("front").innerHTML = ` <h2 style="text-align: center;">Currently up: ${fronter}</h2>
+                       <img
+        src="${ava}"
+        alt="${fronter}"
+        class="avatar"
+      />
+        <p> ${desc}</p>
+            <a href="https://thearcades.me">Back</a>`;
+        });
+    </script>
+  </body>
+</html>

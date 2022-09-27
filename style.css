@@ -1,0 +1,98 @@
+/* CSS files add styling rules to your content */
+* {
+  margin 0;
+  padding 0;
+}
+
+:root {
+  --fv: none;
+  --neonpink: #ff6ec7;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+html {
+}
+
+body {
+  background: url("https://cdn.glitch.com/20540af7-c942-4351-9a89-cd33ee5c95a8%2Farcade.jpg?v=1608837796992");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  font-family: "Press Start 2P";
+  color: var(--neonpink);
+  margin: 5%;
+  /*font-family: helvetica, arial, sans-serif;*/
+}
+
+h1 {
+  font-size: large;
+}
+
+
+
+h2, h3 {
+  font-size: medium;
+}
+
+p, ul {
+  font-family: helvetica, arial, sans-serif;
+  margin: 1.5em;
+  color: rgba(200, 200, 200);
+}
+
+hr {
+  height: 3px;
+  margin: 5% 20%;
+  border-radius: 30%;
+  background-color: orange;
+}
+
+.avatar {
+  float: right;
+  width: 25%;
+  border-radius: 50%;
+}
+
+div {
+  background: rgba(0, 0, 0, 0.8);
+  clear: both;
+  display: table;
+  max-width: 1000px;
+  min-width: 100px;
+  margin: 0 auto;
+  outline: solid;
+  outline-color: var(--neonpink);
+  outline-width: 4px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 20px ;
+}
+
+#title {
+  font-size: 200%;
+}
+
+
+div.intro {
+  margin: 0 auto;
+  outline-color: orange;
+  color: orange;
+  max-width: 400px;
+  min-width: 150px;
+}
+
+div.fragment {
+  min-width: 95%;
+}
+
+#front {
+  font-family: "Press Start 2P";
+}

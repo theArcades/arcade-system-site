@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      property="og:description"
+      title="The Arcades"
+      content="Get to know your new friend(s), the Arcades."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/attachments/770043553451474988/852027380074545152/image0.png"
+    />
+    <title>The Arcades</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- I'm arcade Trash so...-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <h1 id="title" style="text-align: center">Meet the Arcades</h1>
+    <!-- quick bit of js to pull current fronter -->
+    <div>
+  <p>
+    Hello! We are the Arcades. We collectively live in a brain with DID so there's a lot of us to get to know. This page gives you an introduction to us. For more information on DID and our experience, check out our system FAQ below.
+  </p>
+    </div>
+    <div id="front" class="intro"><p>
+      Loading...
+      </p></div>
+     <script>
+      var fronter = "";
+
+      fetch("https://sp-system-site.glitch.me/up")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          fronter = data[0].name;
+          ava = data[0].avatar;
+          desc = data[0].desc
+          document.getElementById("front").innerHTML = ` <h2 style="text-align: center;">Currently up: ${fronter}</h2>
+                       <img
+        src="${ava}"
+        alt="${fronter}"
+        class="avatar"
+      />
+        <p> ${desc}</p>
+            <a href="https://thearcades.me">Back</a>`;
+        });
+    </script>
+
+    <div id="contents" class="row" style="font-size: small">
+      
+      <h1>Links</h1>
+      <a href="/faq.html">System FAQ</a> <br /><br />
+            <br /><br />
+
+      <h1>The Fronters</h1>
+      <a href="#Addie">Addie/Aura</a> <br /><br />
+      <a href="#Colette">Colette 🚿</a> <br /><br />
+      <a href="#Lucy">Lucy 🍃</a> <br /><br />
+      <a href="#Hal">Hal 🌑</a> <br /><br />
+      <a href="#Twi">Twi</a> <br /><br />
+      <a href="#Jean">Jean ☔</a> <br /><br />
+      <h1>The Others</h1>
+      <a href="#Potts">Potts ♟</a> <br /><br />
+      <a href="#Melody">Melody 🎵</a> <br /><br />
+      <a href="#Samantha">Samantha</a> <br /><br />
+      <a href="#Spindle">Spindle</a> <br /><br />
+    </div>
+
+    <hr />
+
+    <div class="row intro">
+      <h1>The Fronters</h1>
+      <p>
+        We're the ones that help with day-to-day life. When it's not safe to be
+        out and plural, we mask as a single personality. Outside of that,
+        though, we're all different. There are even more of us than what is
+        listed here, but the rest of us don't front.
+      </p>
+    </div>
+
+    <div id="Addie" class="row">
+      <img
+        src="https://media.discordapp.net/attachments/818274150858358815/998306521064689724/IMG_0113.png"
+        alt="addie"
+        class="avatar"
+      />
+      <h1>Addie/Aura</h1>
+
+      <h3>About me</h3>
+      <p>
+        The project management enby of the system. Sometimes I'm silly;
+        sometimes I'm practical, but I always have a checklist and work hard to
+        get it all done. I used to go by Addie but have been slowly changing over to Aura after a few breakthroughs in my own journey.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>8 or the body's age, she/they</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Making electronic stuff <br />
+        + Action games<br />
+        + Competency<br />
+        - Deadlines (They make me nervous)
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        If I'm walking through an itenerary or putting together a plan, it's
+        definitely me. I also tend to come out for soft skills and politicking
+        in the office.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>Talk politics, play games, or plan your next big thing.</p>
+
+      <a href="#contents">Back</a>
+    </div>
+
+    <div id="Colette" class="row">
+      <img
+        src="https://cdn.glitch.com/20540af7-c942-4351-9a89-cd33ee5c95a8%2Fcolette.jpg?v=1621870634376"
+        alt="Colette"
+        class="avatar"
+      />
+      <h1>Colette 🚿</h1>
+
+      <h3>About me</h3>
+      <p>
+        I came to be in the system in our late teens when we realized we were
+        very very trans. Did a lot of the initial exploration of gender for the
+        system and went to school for part of our freshman year of college. I
+        handle self-care for the system, both in chores and emotional health. I'm also a bit of a gossip.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>Body's age, she/her</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Cooking <br />
+        + Strutting to Showtunes <br />
+        + Pinball <br />
+        + Playing piano and singing <br />
+        - Being reminded of a todo list <br />
+        - Most video games
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        If we've cooked for you, you have met me. And if we've talked showtunes
+        at any point of time, that was me too. If we're spilling tea, it's definitely me.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>Talk showtunes! Play pinball! Talk cooking!</p>
+      <a href="#contents">Back</a>
+    </div>
+    
+    <div id="Lucy" class="row">
+      <img
+        src="https://cdn.discordapp.com/attachments/770043553451474988/834824282227212288/image0.jpg"
+        alt="Lucy"
+        class="avatar"
+      />
+      <h1>Lucy 🍃</h1>
+
+      <h3>About me</h3>
+      <p>
+        Emotional rock of the system. I get called in for 1:1 coaching and tasks
+        that require a lot of emotional intelligence. I'm the friend who gives
+        you the pep talk you need, and finds a way to reframe failures into
+        chances to get better.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>Body's age, she/her</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Walks in the woods <br />
+        + Chatting with nice people <br />
+        + Puzzles <br />
+        + Getting to know what makes people awesome <br />
+        - Yelling
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        Those times where we've been exceptionally kind and compassionate are
+        usually me.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>Take walks or work through your problems.</p>
+      <a href="#contents">Back</a>
+    </div>
+
+    <div id="Hal" class="row">
+      <img
+        src="https://cdn.glitch.com/20540af7-c942-4351-9a89-cd33ee5c95a8%2Fhal.jpg?v=1621870635796"
+        alt="Hal"
+        class="avatar"
+      />
+      <h1>Hal 🌑</h1>
+
+      <h3>About me</h3>
+      <p>
+        I protect the system from harm. I'm assertive, no-nonsense, and if there's a disagreement I will hold everyone's feet to the fire until it is resolved. Vincent and myself tend to maintain the system boundaries, both at work and in our personal life.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>25, he/him</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Competitive games (fighters, FPS, etc) <br />
+        + Figuring out a problem and solving it <br />
+        + Delicious food <br />
+        - Being ignored <br />
+        - Pushing down our feelings <br />
+        - Sharing too much information about the system with people we don't
+        trust <br />
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        If my voice drops super low and we're curtly pinning people down with pointed questions, you've probably met me. My facilitation style is a bit colder and more assertive than the others.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>
+        Play fighting games or anything competitive. If you need someone firm to help facilitate a solution to a problem, I'm your guy.
+      </p>
+      <a href="#contents">Back</a>
+    </div>
+
+    <div id="Twi" class="row">
+      <img
+        src="https://cdn.discordapp.com/attachments/770043553451474988/851194059062116412/626197_R5mbubTq.png"
+        alt="Twilight"
+        class="avatar"
+      />
+      <h1>Twi</h1>
+
+      <h3>About me</h3>
+      <p>
+        Quiet, withdrawn, fastidious. I prefer to listen and give the floor to
+        others. I handle a lot of documentation at work and am the writer of the
+        system.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>30, he/him</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Quiet nights <br />
+        + Single player games <br />
+        + Trying new things (and being okay with failure) <br />
+        - Being put on the spot<br />
+        - Interruptions
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        If you ever get a message with a massive amount of documentation to back
+        it up, you're probably talking to me.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>
+        Talk about writing, dig up research on a topic, or otherwise need
+        someone to dig into a big pile of research and glean some results.
+      </p>
+      <a href="#contents">Back</a>
+    </div>
+
+    
+  
+      <div id="Jean" class="row">
+      <img
+        src="https://cdn.glitch.global/20540af7-c942-4351-9a89-cd33ee5c95a8/jean.jpg?v=1645464759084"
+        alt="Jean"
+        class="avatar"
+      />
+      <h1>Jean</h1>
+
+      <h3>About me</h3>
+      <p>
+        I'm still pretty new to the system, but I stand up for others in the system when we'd otherwise entertain a fawn response. I defend our emotional boundaries and ensure that we take up the space we deserve.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>26, she/her</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        Still figuring these out, not gonna lie.
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        If I'm suddenly very firm about something that offends or hurt us, you've talked to me.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>
+        Know me better, I guess? Like I said, still getting used to this.
+      </p>
+      <a href="#contents">Back</a>
+    </div>
+
+    
+     <div class="row intro">
+      <h1>(Some) of the Others</h1>
+      <p>
+        We have a number of system members who don't front at work and only come out around trusted people. The ones who wanted to be known have provided their bios here.
+      </p>
+    </div>
+    
+    <div id="Potts" class="row">
+      <img
+        src="https://cdn.glitch.com/20540af7-c942-4351-9a89-cd33ee5c95a8%2Fpotts%20raccoon.png?v=1608828218948"
+        alt="Potts"
+        class="avatar"
+      />
+      <h1>Potts ♟</h1>
+
+      <h3>About me</h3>
+      <p>
+      When the system gets
+        overwhelmed I'm the one that steps in to comfort everyone. But over
+        everything else I'm just here to be a kid!
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>11, he/him</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Super fun video games with friends <br />
+        + Coloring <br />
+        + Legos <br />
+        + Cartoons <br />
+        + Being a whimsical kid! <br />
+        - Being a burden on the system because I'm a kid <br />
+        - People yelling
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>I only get to meet people that everyone else absolutely trusts.</p>
+      <h3>Hit me up if you want to...</h3>
+      <p>
+        Do kid stuff. Play Minecraft or other fun co op games. But you have to
+        ask permission from the hosts because they're fuddy duddies about it
+        sometimes.
+      </p>
+      <a href="#contents">Back</a>
+    </div>
+
+    <div id="Melody" class="row">
+      <img
+        src="https://cdn.glitch.com/20540af7-c942-4351-9a89-cd33ee5c95a8%2Fmelody.png?v=1608827956863"
+        alt="Melody"
+        class="avatar"
+      />
+      <h1>Melody 🎵</h1>
+
+      <h3>About me</h3>
+      <p>
+        Trans tween and techie turbonerd. I came into the system when we were
+        very young and spent a lot of time at my Mom's house. We had a computer
+        there and I did so much QBasic programming, y'all.
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>13, she/her</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Programming <br />
+        + Building computers <br />
+        + Building toys, electronics kits, and anything that lets me make things
+        <br />
+        + Makeup and pretty outfits <br />
+        - Growing up a boy
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>
+        Any time you get us started on the nuts and bolts of tech, computers, or
+        otherwise, you're talking right at me! I think I'm one one of the ones
+        that does makeovers for other trans folk, too.
+      </p>
+      <h3>Hit me up if you want to...</h3>
+      <p>
+        Build cool stuff! I haven't been around since 1997 and coding is so much
+        easier now. I want to get back into being a techie!
+      </p>
+      <a href="#contents">Back</a>
+    </div>
+
+    <div id="Samantha" class="row">
+      <img
+        src="https://cdn.discordapp.com/attachments/771384008360722474/992175609012813834/IMG_2869.png"
+        alt="Samantha"
+        class="avatar"
+      />
+      <h1>Samantha</h1>
+
+      <h3>About me</h3>
+      <p>
+      I tinker with stuff for the system. They said I could look like anything I wanted so I decided to be a bunny with a pink dress 🐰
+      </p>
+      <h3>Age/Pronouns</h3>
+      <p>8, she/her</p>
+      <h3>Likes/Dislikes</h3>
+      <p>
+        + Making electronic things <br />
+        + Soldering <br />
+        + Legos <br />
+        + Cartoons <br />
+        - Jump scares <br />
+        - People yelling
+      </p>
+      <h3>You've probably met me if...</h3>
+      <p>I only get to meet people that everyone else absolutely trusts.</p>
+      <h3>Hit me up if you want to...</h3>
+      <p>
+        Make something cool. Melody keeps saying we're gonna learn Arduino stuff together and I'm really excited for that. Twi wants to make synths, too, so I get to build those too!
+      </p>
+      <a href="#contents">Back</a>
+    </div>
+    
+    <div id="Spindle" class="row">
+      <img
+        src="https://cdn.discordapp.com/attachments/771384008360722474/816678311237386270/45252_ZZU4xbns.png"
+        alt="Spindle"
+        class="avatar"
+      />
+      <h1>Spindle</h1>
+
+      <h3>About me</h3>
+      <p>I control the system's dreams and hold onto its secrets.</p>
+      <h3>Age/Pronouns</h3>
+      <p>Ageless, she/her</p>
+      <a href="#contents">Back</a>
+    </div>
+
+    
+  </body>
+</html>
